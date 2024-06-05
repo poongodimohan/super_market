@@ -2,7 +2,11 @@ from rest_framework import viewsets
 from rest_framework.decorators import action
 from rest_framework.response import Response
 from .models import Product, WeeklyDeal, DailyDeal, Purchase, Bill
-from .serializers import ProductSerializer, WeeklyDealSerializer, DailyDealSerializer, PurchaseSerializer, BillSerializer
+from .serializers import (ProductSerializer, 
+                          WeeklyDealSerializer,
+                            DailyDealSerializer, 
+                            PurchaseSerializer, 
+                            BillSerializer)
 
 class ProductViewSet(viewsets.ModelViewSet):
     queryset = Product.objects.all()
